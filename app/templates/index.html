@@ -5,25 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='signin.css') }}">
+    <script src="{{ url_for('static', filename='ajax.js') }}"></script>
     <title>Robot Framework Workshop</title>
-    <script>
-      $(document).ready(function() {
-           $('form').on('submit', function(event) {
-             $.ajax({
-                data : {
-                   firstName : $('#firstName').val(),
-                   lastName: $('#lastName').val(),
-                       },
-                   type : 'POST',
-                   url : '/robotframework'
-                  })
-              .done(function(data) {
-                $('#output').text(data.output).show();
-            });
-            event.preventDefault();
-            });
-      });
-      </script>
   </head>
   <body class="text-center">
     <div class="github">
@@ -31,7 +14,6 @@
     </div>
     <form class="form-signin">
       <h1 class="h3 mb-3 font-weight-normal">Robot Framework Workshop</h1>
-      <p class="lead" id="output"></p> 
         <div class="form-group">
             <label class="sr-only" for="firstName">First Name</label>
             <input type="text" class="form-control" id="firstName" placeholder="First Name">
@@ -41,6 +23,7 @@
             <input type="text" class="form-control" id="lastName" placeholder="Last Name">
         </div>
         <button id="submitButton" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>   
+        <p class="lead" id="output"></p>
     </form>
   </body>
 </html>
