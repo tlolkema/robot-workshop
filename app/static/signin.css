@@ -23,8 +23,8 @@ body {
 .form-signin { 
   width: 100%;
   max-width: 400px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 530px;
   padding-bottom: 530px;
   border-radius: 5px;
