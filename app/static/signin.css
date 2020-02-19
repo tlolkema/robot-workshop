@@ -15,14 +15,20 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #4A90E2;
+  overflow: hidden;
 }
 
-.form-signin {
+.form-signin { 
   width: 100%;
   max-width: 330px;
-  padding: 5px;
-  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 530px;
+  padding-bottom: 530px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: auto;
 }
 
 .github {
@@ -47,3 +53,6 @@ body {
 .lead {
   padding-top: 10px;
 }
+
+
+C010E0
