@@ -28,7 +28,8 @@ Workshop Files
 
 Excercise 1
 ------------
-In tests.robot there is the following testcase:
+
+In ``tests.robot`` there is the following testcase:
 
 ```robotframework
 Use the SeleniumLibrary to fill in the form
@@ -47,22 +48,42 @@ The following keyword definitions are missing:
 ```
     
 - Write these missing keyword definitions in the resource file ``resources.resource``
-- Run the test to make sure the test passes.
+- Run the test to make sure the test passes
 
 
 Excercise 2
 ------------
-Setup & Teardown:
+You can use Setup & Teardown to execute keywords before/after every testcase or testsuite.
+
+In the settings section of ``tests.robot`` use Setup & Teardown to:
 - Run the STARTUP keyword before every test
 - Run the TEARDOWN keyword after the suite
-- Run the tests
+
+- Run the tests to see the result
 
 Excercise 3
 ------------
-Use WorkshopLibrary to:
-- Make POST call to "/robotframework" with the firstName and lastName
-- Validate the results
-- Run the tests
+- In ``tests.robot`` uncomment the following testcase:
+
+```robotframework
+Use The WorkshopLibrary to make a POST to /robotframework
+    I Make A POST Request To /robotframework with the WorkshopLibrary   Test   User
+    The Response Should Contain   Test User
+```
+
+- Write the keyword definition for 
+```robotframework
+I Make A POST Request To /robotframework with the WorkshopLibrary
+```
+
+This keyword takes 2 arguments:
+- firstName
+- lastName
+
+The keyword should use the python method defined in ``WorkshopLibrary.py``to perform a POST call with these arguments.
+The response should be saved in a ``Test Variable`` called ``${response}``
+
+- Run the test to make sure the test passes
 
 BONUS 1
 ------------
