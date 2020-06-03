@@ -28,11 +28,27 @@ Workshop Files
 
 Excercise 1
 ------------
-Use SeleniumLibrary to:
-- Fill in the form on the workshop application
-- Submit the form
-- Validate the welcome message
-- Run the tests
+In tests.robot there is the following testcase:
+
+```robotframework
+Use the SeleniumLibrary to fill in the form
+    Given I Visit The Robot Framework Workshop Website
+    When I Input The First Name   Test
+    And I Input The Last Name     User
+    And I Click The Submit Button
+    Then The Output Element Should Contain   Test User
+```
+
+The following keyword definitions are missing:
+
+```robotframework
+    And I Input The Last Name     User
+    And I Click The Submit Button
+```
+    
+- Write these missing keyword definitions in the resource file ``resources.resource``
+- Run the test to make sure the test passes.
+
 
 Excercise 2
 ------------
