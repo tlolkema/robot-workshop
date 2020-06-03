@@ -1,7 +1,5 @@
 *** Settings ***
 Resource   resources.resource
-# Test Setup   STARTUP
-# Suite Teardown   TEARDOWN
 
 *** Test Cases ***
 Use the SeleniumLibrary to fill in the form
