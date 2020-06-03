@@ -76,9 +76,9 @@ Use The WorkshopLibrary to make a POST to /robotframework
 I Make A POST Request To /robotframework with the WorkshopLibrary
 ```
 
-This keyword takes 2 arguments:
-- firstName
-- lastName
+- This keyword takes 2 arguments:
+    - firstName
+    - lastName
 
 - The keyword should use the python method defined in ``WorkshopLibrary.py``to perform a POST call with these arguments.
 - The response should be saved in a ``Test Variable`` called ``${response}``
