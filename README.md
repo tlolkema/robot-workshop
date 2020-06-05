@@ -50,6 +50,9 @@ The following keyword definitions are missing:
 - Write these missing keyword definitions in the resource file ``resources.resource``
 - Run the test to make sure the test passes
 
+- SeleniumLibrary documentation:
+    https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
+
 
 Excercise 2
 ------------
