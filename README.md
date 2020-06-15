@@ -5,9 +5,12 @@ Installation
 ------------
 
 - Install python3 and put it in the path.
-- Download chromedriver and put it in the path. (https://chromedriver.chromium.org/)
-- python -m venv env
-- activate virtual env:
+- Download chromedriver and put it in the path: https://chromedriver.chromium.org/
+- Clone the Github repository: https://github.com/tlolkema/robot-workshop/
+
+Open the terminal and go to the location of the repository and run:
+- run: python -m venv env
+- activate virtual env, run:
     - source env/bin/activate (Mac / Linux)
     - env\Scripts\activate (Windows)
 - pip install -r requirements.txt
@@ -16,9 +19,25 @@ Installation
 Running the Workshop Application
 ------------
 
+Open a new terminal and go to the location of the repository:
+- activate virtual env, run:
+    - source env/bin/activate (Mac / Linux)
+    - env\Scripts\activate (Windows)
 - Navigate to the 'app' directory
 - python app.py
 - The app will be running on http://localhost:5000/
+
+
+Test if everything is installed correctly
+------------
+
+Open a new terminal and go to the location of the repository:
+- activate virtual env, run:
+    - source env/bin/activate (Mac / Linux)
+    - env\Scripts\activate (Windows)
+- run: robot solutions
+- if the tests pass the workshop application is running and you have installed everything correctly
+
 
 Workshop Files
 ------------
