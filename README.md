@@ -16,6 +16,9 @@ Open the terminal and go to the location of the repository and run:
 - pip install -r requirements.txt
 
 
+> If you have both installed a python2 and python3 version create the python virtualenv with "python3 -m venv env" to enforce python3.
+
+
 Running the Workshop Application
 ------------
 
@@ -26,6 +29,7 @@ Open a new terminal and go to the location of the repository:
 - Navigate to the 'app' directory
 - python app.py
 - The app will be running on http://localhost:5000/
+- Check if you can go to the workshop application, after submitting your name the application should welcome you.
 
 
 Test if everything is installed correctly
