@@ -4,7 +4,7 @@ Robot Framework Workshop
 Installation
 ------------
 
-- Install python3 and put it in the path.
+- Install python3 and put it in the path. (atleast python 3.6 or any newer version)
 - Download chromedriver and put it in the path: https://chromedriver.chromium.org/
 - Clone the Github repository: https://github.com/tlolkema/robot-workshop/
 
