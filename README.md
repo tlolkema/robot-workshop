@@ -1,8 +1,9 @@
 Robot Framework Workshop
 ===============
 
-Installation
-------------
+# Preperations
+
+### Installation
 
 - Install python3 and put it in the path. (atleast python 3.6 or any newer version)
 - Download chromedriver and put it in the path: https://chromedriver.chromium.org/
@@ -19,8 +20,7 @@ Open the terminal and go to the location of the repository and run:
 > If you have both installed a python2 and python3 version create the python virtualenv with "python3 -m venv env" to enforce python3.
 
 
-Running the Workshop Application
-------------
+### Running the Workshop Application
 
 Open a new terminal and go to the location of the repository:
 - activate virtual env, run:
@@ -32,8 +32,7 @@ Open a new terminal and go to the location of the repository:
 - Check if you can go to the workshop application, after submitting your name the application should welcome you.
 
 
-Test if everything is installed correctly
-------------
+### Test if everything is installed correctly
 
 Open a new terminal and go to the location of the repository:
 - activate virtual env, run:
@@ -43,14 +42,15 @@ Open a new terminal and go to the location of the repository:
 - if the tests pass the workshop application is running and you have installed everything correctly
 
 
-Workshop Files
-------------
+# Workshop
+
+### Workshop Files
 
 - The workshop files are located in the 'test' directory
 - Some of the keywords are already present and some need to be written
 
-Excercise 1
-------------
+
+### Excercise 1
 
 In ``tests.robot`` there is the following testcase:
 
@@ -77,8 +77,8 @@ The following keyword definitions are missing:
     https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
 
-Excercise 2
-------------
+### Excercise 2
+
 You can use Setup & Teardown to execute keywords before/after every testcase or testsuite.
 
 In the settings section of ``tests.robot`` use Setup & Teardown to:
@@ -87,8 +87,9 @@ In the settings section of ``tests.robot`` use Setup & Teardown to:
 
 - Run the tests to see the result
 
-Excercise 3
-------------
+
+### Excercise 3
+
 - In ``tests.robot`` uncomment the following testcase:
 
 ```robotframework
@@ -107,12 +108,14 @@ I Make A POST Request To /robotframework with the WorkshopLibrary
 
 - Run the test to make sure the test passes
 
-BONUS 1
-------------
+
+### BONUS 1
+
 - Use Pabot to test the testcases in parrallel
 - https://github.com/mkorpela/pabot
 
-BONUS 2
-------------
+
+### BONUS 2
+
 - Make a data driven test using a testtemplate
 - https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst#data-driven-tests
