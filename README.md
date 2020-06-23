@@ -45,6 +45,8 @@ Open a new terminal and go to the location of the repository:
 - run: robot solutions
 - if the tests pass the workshop application is running and you have installed everything correctly
 
+> **Mac**: If you get the message chromedriver can't be verifed, go to: **"System Preferences" > "Security & Privacy"** and trust chromedriver. 
+
 
 ### Code editor
 
