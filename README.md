@@ -1,5 +1,9 @@
-Robot Framework Workshop
-===============
+# Robot Framework Workshop
+
+**Resource:** Rein van der Vegt (https://github.com/Reinaard)
+
+**Resource:** Tim Lolkema (https://github.com/tlolkema/)
+
 
 # Preperations
 
@@ -40,6 +44,17 @@ Open a new terminal and go to the location of the repository:
     - env\Scripts\activate (Windows)
 - run: robot solutions
 - if the tests pass the workshop application is running and you have installed everything correctly
+
+
+### Code editor
+
+In this workshop you can work with any code editor.
+Our recommendation for a quick and easy start is Visual Studio Code.
+
+- Install Visual Studio Code (https://code.visualstudio.com/)
+- Within Visual Studio Code, go to Extensions and install 'Robot Framework Intellisense'
+
+This will give you syntax highlighting and navigation to keyword definitions.
 
 
 # Workshop
