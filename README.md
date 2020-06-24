@@ -1,33 +1,73 @@
-Robot Framework Workshop
-===============
+# Robot Framework Workshop
 
-Installation
-------------
+**Resource:** Rein van der Vegt (https://github.com/Reinaard)
 
-- Install python3 and put it in the path.
-- Download chromedriver and put it in the path. (https://chromedriver.chromium.org/)
-- python -m venv env
-- activate virtual env:
+**Resource:** Tim Lolkema (https://github.com/tlolkema/)
+
+
+# Preperations
+
+### Installation
+
+- Install python3 and put it in the path. (atleast python 3.6 or any newer version)
+- Download chromedriver and put it in the path: https://chromedriver.chromium.org/
+- Clone the Github repository: https://github.com/tlolkema/robot-workshop/
+
+Open the terminal and go to the location of the repository and run:
+- run: python -m venv env
+- activate virtual env, run:
     - source env/bin/activate (Mac / Linux)
     - env\Scripts\activate (Windows)
 - pip install -r requirements.txt
 
 
-Running the Workshop Application
-------------
+> If you have both installed a python2 and python3 version create the python virtualenv with "python3 -m venv env" to enforce python3.
 
+
+### Running the Workshop Application
+
+Open a new terminal and go to the location of the repository:
+- activate virtual env, run:
+    - source env/bin/activate (Mac / Linux)
+    - env\Scripts\activate (Windows)
 - Navigate to the 'app' directory
 - python app.py
 - The app will be running on http://localhost:5000/
+- Check if you can go to the workshop application, after submitting your name the application should welcome you.
 
-Workshop Files
-------------
+
+### Test if everything is installed correctly
+
+Open a new terminal and go to the location of the repository:
+- activate virtual env, run:
+    - source env/bin/activate (Mac / Linux)
+    - env\Scripts\activate (Windows)
+- run: robot solutions
+- if the tests pass the workshop application is running and you have installed everything correctly
+
+> **Mac**: If you get the message chromedriver can't be verifed, go to: **"System Preferences" > "Security & Privacy"** and trust chromedriver. 
+
+
+### Code editor
+
+In this workshop you can work with any code editor.
+Our recommendation for a quick and easy start is Visual Studio Code.
+
+- Install Visual Studio Code (https://code.visualstudio.com/)
+- Within Visual Studio Code, go to Extensions and install 'Robot Framework Intellisense'
+
+This will give you syntax highlighting and navigation to keyword definitions.
+
+
+# Workshop
+
+### Workshop Files
 
 - The workshop files are located in the 'test' directory
 - Some of the keywords are already present and some need to be written
 
-Excercise 1
-------------
+
+### Excercise 1
 
 In ``tests.robot`` there is the following testcase:
 
@@ -54,8 +94,8 @@ The following keyword definitions are missing:
     https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
 
-Excercise 2
-------------
+### Excercise 2
+
 You can use Setup & Teardown to execute keywords before/after every testcase or testsuite.
 
 In the settings section of ``tests.robot`` use Setup & Teardown to:
@@ -64,8 +104,9 @@ In the settings section of ``tests.robot`` use Setup & Teardown to:
 
 - Run the tests to see the result
 
-Excercise 3
-------------
+
+### Excercise 3
+
 - In ``tests.robot`` uncomment the following testcase:
 
 ```robotframework
@@ -79,21 +120,19 @@ Use The WorkshopLibrary to make a POST to /robotframework
 I Make A POST Request To /robotframework with the WorkshopLibrary
 ```
 
-- This keyword takes 2 arguments:
-    - firstName
-    - lastName
-
 - The keyword should use the python method defined in ``WorkshopLibrary.py``to perform a POST call with these arguments.
 - The response should be saved in a ``Test Variable`` called ``${response}``
 
 - Run the test to make sure the test passes
 
-BONUS 1
-------------
+
+### BONUS 1
+
 - Use Pabot to test the testcases in parrallel
 - https://github.com/mkorpela/pabot
 
-BONUS 2
-------------
+
+### BONUS 2
+
 - Make a data driven test using a testtemplate
 - https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst#data-driven-tests
