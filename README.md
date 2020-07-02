@@ -67,7 +67,7 @@ This will give you syntax highlighting and navigation to keyword definitions.
 - Some of the keywords are already present and some need to be written
 
 
-### Excercise 1
+### Excercise 1 (E2E - Browser)
 
 In ``tests.robot`` there is the following testcase:
 
@@ -94,7 +94,7 @@ The following keyword definitions are missing:
     https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
 
-### Excercise 2
+### Excercise 2 (Setup & Teardown)
 
 You can use Setup & Teardown to execute keywords before/after every testcase or testsuite.
 
@@ -105,7 +105,7 @@ In the settings section of ``tests.robot`` use Setup & Teardown to:
 - Run the tests to see the result
 
 
-### Excercise 3
+### Excercise 3 (API)
 
 - In ``tests.robot`` uncomment the following testcase:
 
@@ -126,13 +126,13 @@ I Make A POST Request To /robotframework with the WorkshopLibrary
 - Run the test to make sure the test passes
 
 
-### BONUS 1
+### BONUS 1 (Parrallel tests)
 
 - Use Pabot to test the testcases in parrallel
 - https://github.com/mkorpela/pabot
 
 
-### BONUS 2
+### BONUS 2 (Test Template)
 
-- Make a data driven test using a testtemplate
+- Make a data driven test using a test template
 - https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst#data-driven-tests
