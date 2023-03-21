@@ -11,4 +11,4 @@ robotframework==3.1.2
 robotframework-seleniumlibrary==4.3.0
 selenium==3.141.0
 urllib3==1.26.5
-Werkzeug==1.0.0
+Werkzeug==2.2.3
